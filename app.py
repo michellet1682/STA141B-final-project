@@ -27,6 +27,12 @@ import math
 import types
 import pkg_resources
 
+import dash as d
+from dash import html
+from dash import dcc
+import dash_bootstrap_components as dbc
+#from jupyter_dash import JupyterDash
+
 
 # In[3]:
 
@@ -564,20 +570,6 @@ pvalue_table = go.Figure(data = [go.Table(
 )])
 pvalue_table.show()
 
-
-# In[49]:
-
-
-import dash as d
-from dash import html
-from dash import dcc
-import dash_bootstrap_components as dbc
-from jupyter_dash import JupyterDash
-
-
-# In[50]:
-
- 
 
 
 # In[51]:

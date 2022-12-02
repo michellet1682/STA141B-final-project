@@ -355,11 +355,7 @@ ev_year_fig.layout.coloraxis.colorbar = {'title': 'Number of EVs',
 # In[30]:
 
 
-url = "https://raw.githubusercontent.com/lbarrett24/CA-Election-Data-Challenge/Connor2-branch/STA141B_Project_Sentiment_Analysis_Data.csv"
-res = requests.get(url, allow_redirects=True)
-with open('cleaned_data.csv','wb') as file:
-    file.write(res.content)
-sa_df = pd.read_csv('cleaned_data.csv')
+sa_df = pd.read_csv('STA141B_Project_Sentiment_Analysis_Data.csv')
 
 
 # In[31]:

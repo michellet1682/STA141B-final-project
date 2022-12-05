@@ -31,6 +31,10 @@ import pkg_resources
 # In[3]:
 
 
+app = d.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+server = app.server
+app.title = 'California 2022 Election Prop 30' 
+
 excel_data = pd.read_excel('Hydrogen_Refueling_Stations_Last updated_10-18-2022.xlsx')
 df = pd.DataFrame(excel_data)
 
@@ -577,11 +581,6 @@ from jupyter_dash import JupyterDash
 
 
 # In[50]:
-
-
-app = d.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
-server = app.server
-app.title = 'California 2022 Election Prop 30' 
 
 
 # In[51]:
